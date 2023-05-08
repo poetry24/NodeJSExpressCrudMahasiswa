@@ -32,7 +32,7 @@ var upload = multer({
  
 
 // create data / insert data
-app.post('/api/mahasiswa',upload.single('image'),(req, res) => {
+app.post('/api/mahasiswa',upload.single('images'),(req, res) => {
 
 
     const data = { ...req.body };
